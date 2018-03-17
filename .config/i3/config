@@ -11,8 +11,7 @@
 exec dunst
 exec udiskie -t
 exec compton
-exec feh --bg-fill $HOME/mountain.jpeg
-exec $HOME/battery.sh
+exec $HOME/scripts/wallpaper.sh
 exec termite -t scratchpad
 
 set $mod Mod4
@@ -201,11 +200,12 @@ bindsym XF86AudioNext exec mpc -q next
 bindsym XF86AudioPrev exec mpc -q prev
 bindsym XF86AudioPlay exec mpc -q toggle
 
-#bindsym XF86MonBrightnessUp exec $HOME/backlight.sh set + 14
-#bindsym XF86MonBrightnessDown exec $HOME/backlight.sh set + -14
+#bindsym XF86MonBrightnessUp exec $HOME/scripts/backlight.sh set + 14
+#bindsym XF86MonBrightnessDown exec $HOME/scripts/backlight.sh set + -14
 bindsym XF86AudioMute exec amixer sset Master toggle
 bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
 bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
+bindsym XF86Sleep exec $HOME/scripts/sleep.sh
 
 #class				 border		background 	text		indicator	child_border
  client.focused			 #fba922 	#fba922 	#000000 	#d84315		#fba922
