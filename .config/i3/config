@@ -13,6 +13,8 @@ exec udiskie -t
 exec compton
 exec $HOME/scripts/wallpaper.sh
 exec termite -t scratchpad
+exec polybar top
+exec polybar bottom
 
 set $mod Mod4
 
@@ -26,6 +28,7 @@ assign [class=Chromium] $ws1
 assign [instance=winword.exe] $ws3
 assign [instance=powerpnt.exe] $ws3
 assign [instance=excel.exe] $ws3
+assign [class=Pcmanfm] $ws2
 for_window [title=scratchpad] move scratchpad
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -110,9 +113,9 @@ bindsym $mod+z scratchpad show
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
+set $ws1 "1: browser"
+set $ws2 "2: files"
+set $ws3 "3: office"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -187,9 +190,9 @@ bindsym $mod+Ctrl+Right resize grow width 10 px or 10 ppt
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+#bar {
+#        status_command i3status
+#}
 
 bindsym $mod+c exec chromium
 bindsym $mod+x exec gmrun
@@ -205,7 +208,7 @@ bindsym XF86AudioPlay exec mpc -q toggle
 bindsym XF86AudioMute exec amixer sset Master toggle
 bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
 bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
-bindsym XF86Sleep exec $HOME/scripts/sleep.sh
+bindsym XF86Sleep exec $HOME/scripts/lock.sh && systemctl suspend
 
 #class				 border		background 	text		indicator	child_border
  client.focused			 #fba922 	#fba922 	#000000 	#d84315		#fba922
