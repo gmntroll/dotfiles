@@ -175,8 +175,8 @@ label-indicator-padding = 1
 [module/date]
 type = internal/date
 
-date =  %d.%m.%y
-date-alt =  %H:%M:%S
+date-alt =  %d.%m.%y
+date =  %H:%M:%S
 
 [module/mem]
 type = internal/memory
