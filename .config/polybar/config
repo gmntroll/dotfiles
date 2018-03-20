@@ -89,10 +89,11 @@ module-margin = 1
 [module/i3]
 type = internal/i3
 
-ws-icon-0 = 1: browser;
+ws-icon-0 = 1: web;
 ws-icon-1 = 2: files;
 ws-icon-2 = 3: office;
-ws-icon-3 = 10: music;
+ws-icon-3 = 4: term;
+ws-icon-4 = 10: music;
 ws-icon-default = 
 
 wrapping-scroll = false

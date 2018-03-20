@@ -118,10 +118,10 @@ bindsym $mod+z scratchpad show
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: browser"
+set $ws1 "1: web"
 set $ws2 "2: files"
 set $ws3 "3: office"
-set $ws4 "4"
+set $ws4 "4: term"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
