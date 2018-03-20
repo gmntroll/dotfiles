@@ -13,17 +13,20 @@ exec udiskie -t
 exec compton
 exec $HOME/scripts/wallpaper.sh
 exec termite -t scratchpad
-exec polybar top
-exec polybar bottom
+exec polybar main
+
+#bindsym Return exec $HOME/count.sh
 
 set $mod Mod4
 
-new_window pixel 1
-new_float pixel 1
+default_border pixel 1
+default_floating_border pixel 1
+
 focus_follows_mouse no
 hide_edge_borders both
 for_window [class=mpv] floating enable
 for_window [class=mpv] sticky enable
+for_window [class=Lxappearance] floating enable
 assign [class=Chromium] $ws1
 assign [instance=winword.exe] $ws3
 assign [instance=powerpnt.exe] $ws3
@@ -54,6 +57,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
+bindsym --whole-window button8 kill
 
 # change focus
 bindsym $mod+j focus left

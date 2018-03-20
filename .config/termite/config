@@ -1,18 +1,12 @@
 [options]
 allow_bold = true
-#audible_bell = false
 clickable_url = true
 dynamic_title = true
 font = Anonymous Pro for Powerline 10
-#fullscreen = true
-#geometry = 640x480
-#icon_name = terminal
-#mouse_autohide = false
-#scroll_on_output = false
-#scroll_on_keystroke = true
+icon_name = terminal
 # Length of the scrollback buffer, 0 disabled the scrollback buffer
 # and setting it to a negative value means "infinite scrollback"
-scrollback_lines = 10000
+scrollback_lines = -1
 #search_wrap = true
 #urgent_on_bell = true
 #hyperlinks = false
@@ -44,7 +38,7 @@ cursor_shape = underline
 foreground      = #c5c8c6
 foreground_bold = #c5c8c6
 cursor          = #c5c8c6
-background      = rgba(50,50,50,0.8)
+background      = rgba(50,50,50,0.85)
 
 # black
 color0  = #1d1f21

@@ -1,5 +1,5 @@
 [colors]
-background = #dd2f2f21
+background = #2f2f21
 ;black
 color0  = #1d1f21
 color8  = #969896
@@ -67,6 +67,24 @@ modules-left = menu i3
 tray-position = right
 tray-background = ${colors.background}
 
+[bar/main]
+monitor=eDP
+bottom=true
+height=20
+line-size=1
+font-0 = Anonymous Pro:size=8
+font-1 = Font Awesome:size=10;2
+
+tray-position=right
+tray-background=${root.background}
+
+background = ${colors.background}
+foreground = ${colors.color7}
+modules-left = i3
+modules-center = mpd
+modules-right = kbd mem vol net bat date
+module-margin = 1
+
 [module/i3]
 type = internal/i3
 
@@ -79,20 +97,20 @@ wrapping-scroll = false
 
 index-sort = true
 
-label-focused = %index%/%icon%
+label-focused = %index%:%icon%
 label-focused-padding = 1
-label-focused-underline = ${colors.color2}
+;label-focused-underline = ${colors.color2}
 label-focused-foreground = ${colors.color2}
 
-label-unfocused = %index%/%icon%
+label-unfocused = %index%:%icon%
 label-unfocused-padding = 1
-label-unfocused-overline = ${colors.color3}
+;label-unfocused-overline = ${colors.color3}
 label-unfocused-foreground = ${colors.color3}
 
-label-urgent = %index%/%icon%
+label-urgent = %index%:%icon%
 label-urgent-padding = 1
 label-urgent-foreground = ${colors.color1}
-label-urgent-overline = ${colors.color1}
+;label-urgent-overline = ${colors.color1}
 
 [module/bat]
 type = internal/battery
@@ -100,16 +118,24 @@ type = internal/battery
 battery = BAT0
 adapter = AC0
 
-format-charging = <label-charging><bar-capacity>
-label-charging = 
+format-charging = <label-charging>
+label-charging =  %percentage%%
 label-charging-foreground = ${colors.color2}
 
-format-discharging = <label-discharging><bar-capacity>
-label-discharging = 
+format-discharging = <ramp-capacity> <label-discharging>
+label-discharging = %percentage%%
 label-discharging-foreground = ${colors.color3}
 
-format-full = <label-full><bar-capacity>
-label-full = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = ${colors.color3}
+
+format-full = <label-full>
+label-full =  %percentage%%
+label-full-foreground = ${colors.color2}
 
 bar-capacity-indicator = |
 bar-capacity-fill = ─
@@ -132,7 +158,7 @@ label-time-foreground = ${colors.color4}
 type = internal/network
 interface = wlp1s0
 
-label-connected = %{F#3971ed}%{F-}%downspeed% %{F#fba922}%{F-}%upspeed%
+label-connected = %{F#3971ed} %{F-}%downspeed% %{F#fba922} %{F-}%upspeed%
 label-disconnected = 
 label-disconnected-foreground = ${colors.color1}
 
@@ -140,21 +166,22 @@ label-disconnected-foreground = ${colors.color1}
 type = internal/volume
 
 master-soundcard = default
-speaker-soundcard = default
-headphone-soundcard = default
 
-speaker-mixer = Speaker
-headphone-mixer = Headphone
-headphone-id = 14
+mapped = true
 
-format-volume = <label-volume><bar-volume>
-format-muted = <label-muted><bar-volume>
+format-volume = <ramp-volume> <label-volume>
+format-muted = <label-muted>
 
-label-muted = 
+label-muted =  muted
 label-muted-foreground = ${colors.color1}
 
-label-volume = 
-label-volume-foreground = ${colors.color3}
+label-volume = %percentage%%
+label-volume-foreground = ${colors.color2}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = ${colors.color2}
 
 bar-volume-width = 10
 bar-volume-fill = ─
@@ -165,7 +192,7 @@ bar-volume-indicator = |
 type = internal/xkeyboard
 
 label-layout =   %layout%
-label-layout-foreground = ${colors.color7}
+label-layout-foreground = ${colors.color6}
 
 label-indicator = %name:0:1%
 label-indicator-foreground = ${colors.color0}
@@ -182,6 +209,7 @@ date =  %H:%M:%S
 type = internal/memory
 
 label =  %percentage_used%%
+label-foreground = ${colors.color5}
 
 [module/menu]
 type = custom/menu
@@ -227,4 +255,3 @@ menu-1-8 = pcmanfm
 menu-1-8-exec = pcmanfm &
 menu-1-9 =  termite
 menu-1-9-exec = termite &
-
