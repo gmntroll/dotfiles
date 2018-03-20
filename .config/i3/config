@@ -57,7 +57,6 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
-bindsym --whole-window button8 kill
 
 # change focus
 bindsym $mod+j focus left
