@@ -201,6 +201,7 @@ bindsym $mod+Ctrl+Right resize grow width 10 px or 10 ppt
 bindsym $mod+c exec chromium
 bindsym $mod+x exec gmrun
 bindsym $mod+d exec pcmanfm
+bindsym Print exec gnome-screenshot -i
 
 bindsym XF86AudioStop exec mpc -q stop
 bindsym XF86AudioNext exec mpc -q next
