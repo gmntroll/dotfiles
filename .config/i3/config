@@ -13,6 +13,7 @@ exec udiskie -t
 exec compton
 exec $HOME/scripts/wallpaper.sh
 exec termite -t scratchpad
+exec termite -t ncmpcpp -e ncmpcpp
 exec polybar main
 
 #bindsym Return exec $HOME/count.sh
@@ -33,6 +34,7 @@ assign [instance=powerpnt.exe] $ws3
 assign [instance=excel.exe] $ws3
 assign [class=Pcmanfm] $ws2
 for_window [title=scratchpad] move scratchpad
+for_window [title=ncmpcpp] move workspace number 10
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -125,7 +127,7 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10"
+set $ws10 "10: music"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
