@@ -68,6 +68,7 @@ tray-position = right
 tray-background = ${colors.background}
 
 [bar/main]
+fixed-center=true
 monitor=eDP
 bottom=true
 height=20
