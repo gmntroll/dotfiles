@@ -1,42 +1,49 @@
 [colors]
-background = #2f2f21
-;black
-color0  = #1d1f21
-color8  = #969896
 
-;red
-color1  = #cc342b
-color9  = #cc342b
+# special
+foreground      = #263238
+foreground_bold = #263238
+cursor          = #263238
+background      = #fafafa
 
-;green
-color2  = #198844
-color10 = #198844
+# black
+color0  = #212121
+color8  = #616161
 
-;yellow
-color3  = #fba922
-color11 = #fba922
+# red
+color1  = #b71c1c
+color9  = #d32f2f
 
-;blue
-color4  = #3971ed
-color12 = #3971ed
+# green
+color2  = #1b5e20
+color10 = #388e3c
 
-;magenta
-color5  = #a36ac7
-color13 = #a36ac7
+# yellow
+color3  = #ff6f00
+color11 = #ffa000
 
-;cyan
-color6  = #3971ed
-color14 = #3971ed
+# blue
+color4  = #0d47a1
+color12 = #1976d2
 
-;white
-color7  = #c5c8c6
-color15 = #ffffff
+# magenta
+color5  = #4a148c
+color13 = #7b1fa2
+
+# cyan
+color6  = #006064
+color14 = #0097a7
+
+# white
+color7  = #b0bec5
+color15 = #eceff1
+
 [bar/top]
 monitor = eDP
 bottom = false
 
 background = ${colors.background}
-foreground = ${colors.color7}
+foreground = ${colors.foreground}
 font-0 = Anonymous Pro:size=8
 font-1 = Font Awesome:size=10
 
@@ -53,7 +60,7 @@ monitor = eDP
 bottom = true
 
 background = ${colors.background}
-foreground = ${colors.color7}
+foreground = ${colors.foreground}
 
 font-0 = Anonymous Pro:size=8
 font-1 = Font Awesome:size=10
@@ -79,12 +86,19 @@ font-1 = Font Awesome:size=10;2
 tray-position=right
 tray-background=${root.background}
 
+border-top-size=1
+border-top-color=${colors.foreground}
+
 background = ${colors.background}
-foreground = ${colors.color7}
-modules-left = i3
+foreground = ${colors.foreground}
+modules-left = i3 bspwm
 modules-center = mpd
 modules-right = kbd mem vol net bat date
 module-margin = 1
+
+[module/bspwm]
+type = internal/bspwm
+
 
 [module/i3]
 type = internal/i3
@@ -161,7 +175,7 @@ label-time-foreground = ${colors.color4}
 type = internal/network
 interface = wlp1s0
 
-label-connected = %{F#3971ed} %{F-}%downspeed% %{F#fba922} %{F-}%upspeed%
+label-connected = %{F#006064} %{F-}%downspeed% %{F#ff6f00} %{F-}%upspeed%
 label-disconnected = 
 label-disconnected-foreground = ${colors.color1}
 
@@ -198,8 +212,8 @@ label-layout =   %layout%
 label-layout-foreground = ${colors.color6}
 
 label-indicator = %name:0:1%
-label-indicator-foreground = ${colors.color0}
-label-indicator-background = ${colors.color7}
+label-indicator-foreground = ${colors.color7}
+label-indicator-background = ${colors.foreground}
 label-indicator-padding = 1
 
 [module/date]

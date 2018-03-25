@@ -154,8 +154,8 @@ max_icon_size = 80
 # Paths to default icons.
 icon_folders = /usr/share/icons/Papirus/16x16/mimetypes/:/usr/share/icons/Papirus/48x48/status/:/usr/share/icons/Papirus/16x16/devices/:/usr/share/icons/Papirus/48x48/notifications/:/usr/share/icons/Papirus/48x48/emblems/
 
-frame_width = 3
-frame_color = "#8EC07C"
+frame_width = 2
+frame_color = "#fafafa"
 
 [shortcuts]
 
@@ -181,23 +181,23 @@ context = ctrl+shift+period
 [urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
-frame_color = "#198844"
-foreground = "#198844"
-background = "#2f2f21"
+frame_color = "#1e5b20"
+foreground = "#263238"
+background = "#fafafa"
 #background = "#2B313C"
 timeout = 4
 
 [urgency_normal]
-frame_color = "#fba922"
-foreground = "#fba922"
-background = "#2f2f21"
+frame_color = "#ff6f00"
+foreground = "#263238"
+background = "#fafafa"
 #background = "#2B313C"
 timeout = 6
 
 [urgency_critical]
-frame_color = "#cc342b"
-foreground = "#cc342b"
-background = "#2f2f21"
+frame_color = "#b71c1c"
+foreground = "#263238"
+background = "#fafafa"
 #background = "#2B313C"
 timeout = 8
 

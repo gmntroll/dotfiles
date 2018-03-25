@@ -190,6 +190,8 @@ bindsym $mod+d exec pcmanfm
 bindsym Print exec gnome-screenshot -i
 bindsym $mod+m exec $HOME/scripts/lock.sh
 
+#bindsym XF86TouchpadToggle
+
 bindsym XF86AudioStop exec mpc -q stop
 bindsym XF86AudioNext exec mpc -q next
 bindsym XF86AudioPrev exec mpc -q prev
@@ -202,8 +204,41 @@ bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
 bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
 bindsym XF86Sleep exec $HOME/scripts/lock.sh && systemctl suspend
 
+
+# black
+set $color0 "#212121"
+set $color8 "#616161"
+
+# red
+set $color1 "#b71c1c"
+set $color9 "#d32f2f"
+
+# green
+set $color2 "#1b5e20"
+set $color10 "#388e3c"
+
+# yellow
+set $color3 "#ff6f00"
+set $color11 "#ffa000"
+
+# blue
+set $color4 "#0d47a1"
+set $color12 "#1976d2"
+
+# magenta
+set $color5 "#4a148c"
+set $color13 "#7b1fa2"
+
+# cyan
+set $color6 "#006064"
+set $color14 "#0097a7"
+
+# white
+set $color7 "#b0bec5"
+set $color15 "#eceff1"
+
 #class				 border		background 	text		indicator	child_border
- client.focused			 #fba922 	#fba922 	#000000 	#d84315		#fba922
- client.focused_inactive	 #969896 	#969896 	#000000 	#bf360c 	#969896
- client.unfocused 		 #1d1f21 	#1d1f21 	#ffffff 	#1d1f21 	#1d1f21
- client.urgent			 #cc342b	#cc342b		#1d1f21		#198844		#cc342b
+ client.focused			 $color3 	$color3 	$color0 	$color2		$color3
+ client.focused_inactive	 $color8 	$color8 	$color0 	$color10 	$color8
+ client.unfocused 		 $color0 	$color0 	$color7 	$color0 	$color0
+ client.urgent			 $color1	$color1		$color0		$color9		$color0
