@@ -1,9 +1,5 @@
 #!/bin/sh
-exec pkill dunst
-exec pkill udiskie
-exec pkill compton
 exec pkill battery.sh
-exec pkill polybar
 
 exec dunst
 exec udiskie -t

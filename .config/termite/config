@@ -30,7 +30,7 @@ cursor_shape = underline
 #size_hints = false
 
 # "off", "left" or "right"
-#scrollbar = off
+scrollbar = off
 
 [colors]
 
@@ -38,7 +38,8 @@ cursor_shape = underline
 foreground      = #263238
 foreground_bold = #263238
 cursor          = #263238
-background      = #fafafa
+#background      = rgba(255,248,225,0.8)
+background	= #fafafa
 
 # black
 color0  = #212121
