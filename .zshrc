@@ -21,8 +21,13 @@ alias search='pacman -Ss'
 alias remove='sudo pacman -Rsc'
 #zle -N up-line-or-beginning-search
 #zle -N down-line-or-beginning-search
+bindkey -e
+unsetopt global_rcs
 bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey "^[[3~"   delete-char
 #[[ -n "$key[Up]"   ]] && bindkey -- "$key[Up]"   up-line-or-beginning-search
 #[[ -n "$key[Down]" ]] && bindkey -- "$key[Down]" down-line-or-beginning-search
 source /etc/profile.d/vte.sh

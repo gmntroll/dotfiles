@@ -30,6 +30,7 @@ assign [class=Chromium] $ws1
 assign [instance=winword.exe] $ws3
 assign [instance=powerpnt.exe] $ws3
 assign [instance=excel.exe] $ws3
+assign [class=Evince] $ws3
 assign [class=Pcmanfm] $ws2
 assign [title=ncmpcpp] $ws10
 for_window [title=scratchpad] move scratchpad
