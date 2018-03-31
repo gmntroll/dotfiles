@@ -67,7 +67,7 @@ font-1 = Font Awesome:size=10
 
 line-size = 1
 
-height = 15
+height = 12
 module-margin = 1
 
 modules-left = menu i3
@@ -78,13 +78,16 @@ tray-background = ${colors.background}
 fixed-center=true
 monitor=eDP
 bottom=true
-height=20
+height=13
 line-size=1
-font-0 = Anonymous Pro:size=8
-font-1 = Font Awesome:size=10;2
+font-0 = fixed:pixelsize=6
+;font-0 = Anonymous Pro:size=7:antialias=false
+;font-1 = Font Awesome:size=7:antialias=false;1
+font-1 = siji:pixelsize=6;1
 
 tray-position=right
 tray-background=${root.background}
+tray-maxsize=12
 
 border-top-size=1
 border-top-color=${colors.foreground}
@@ -103,12 +106,21 @@ type = internal/bspwm
 [module/i3]
 type = internal/i3
 
-ws-icon-0 = 1: web;
-ws-icon-1 = 2: files;
-ws-icon-2 = 3: office;
-ws-icon-3 = 4: term;
-ws-icon-4 = 10: music;
-ws-icon-default = 
+;Font Awesome 4
+;ws-icon-0 = 1: web;
+;ws-icon-1 = 2: files;
+;ws-icon-2 = 3: office;
+;ws-icon-3 = 4: term;
+;ws-icon-4 = 10: music;
+;ws-icon-default = 
+
+;Siji font
+ws-icon-0 = 1: web;
+ws-icon-1 = 2: files;
+ws-icon-2 = 3: office;
+ws-icon-3 = 4: term;
+ws-icon-4 = 10: music;
+ws-icon-default = 
 
 wrapping-scroll = false
 
@@ -136,22 +148,38 @@ battery = BAT0
 adapter = AC0
 
 format-charging = <label-charging>
-label-charging =  %percentage%%
+
+;Font Awesome 4
+;label-charging =  %percentage%%
+
+;Siji font
+label-charging =  %percentage%%
+
 label-charging-foreground = ${colors.color2}
 
 format-discharging = <ramp-capacity> <label-discharging>
 label-discharging = %percentage%%
 label-discharging-foreground = ${colors.color3}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+;Font Awesome 4
+;ramp-capacity-0 = 
+;ramp-capacity-1 = 
+;ramp-capacity-2 = 
+;ramp-capacity-3 = 
+;ramp-capacity-4 = 
+;Siji font
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+
 ramp-capacity-foreground = ${colors.color3}
 
 format-full = <label-full>
-label-full =  %percentage%%
+;Font Awesome 4
+;label-full =  %percentage%%
+;Siji font
+label-full =  %percentage%%
 label-full-foreground = ${colors.color2}
 
 bar-capacity-indicator = |
@@ -166,17 +194,22 @@ host = 127.0.0.1
 port = 6600
 
 format-online = <label-song> <label-time>
-
-label-song =  %artist% - %title%
+;Font Awesome 4
+;label-song =  %artist% - %title%
+;Siji font
+label-song =  %artist% - %title%
 label-song-foreground = ${colors.color4}
 label-time-foreground = ${colors.color4}
 
 [module/net]
 type = internal/network
 interface = wlp1s0
-
-label-connected = %{F#006064} %{F-}%downspeed% %{F#ff6f00} %{F-}%upspeed%
-label-disconnected = 
+;Font Awesome 4
+;label-connected = %{F#006064} %{F-}%downspeed% %{F#ff6f00} %{F-}%upspeed%
+;label-disconnected = 
+;Siji font
+label-connected = %{F#006064} %{F-}%downspeed% %{F#ff6f00} %{F-}%upspeed%
+label-disconnected = 
 label-disconnected-foreground = ${colors.color1}
 
 [module/vol]
@@ -189,15 +222,25 @@ mapped = true
 format-volume = <ramp-volume> <label-volume>
 format-muted = <label-muted>
 
-label-muted =  muted
+;Font Awesome 4
+;label-muted =  muted
+;Siji font
+label-muted =  muted
 label-muted-foreground = ${colors.color1}
 
 label-volume = %percentage%%
 label-volume-foreground = ${colors.color2}
 
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
+;Font Awesome 4
+;ramp-volume-0 = 
+;ramp-volume-1 = 
+;ramp-volume-2 = 
+
+;Siji font
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
 ramp-volume-foreground = ${colors.color2}
 
 bar-volume-width = 10
@@ -208,7 +251,10 @@ bar-volume-indicator = |
 [module/kbd]
 type = internal/xkeyboard
 
-label-layout =   %layout%
+;Font Awesome 4
+;label-layout =   %layout%
+;Siji font
+label-layout =  %layout%
 label-layout-foreground = ${colors.color6}
 
 label-indicator = %name:0:1%
@@ -219,13 +265,20 @@ label-indicator-padding = 1
 [module/date]
 type = internal/date
 
-date-alt =  %d.%m.%y
-date =  %H:%M:%S
+;Font Awesome 4
+;date-alt =  %d.%m.%y
+;date =  %H:%M:%S
+;Siji font
+date-alt =  %d.%m.%y
+date =  %H:%M:%S
 
 [module/mem]
 type = internal/memory
 
-label =  %percentage_used%%
+;Font Awesome 4
+;label =  %percentage_used%%
+;Siji font
+label =  %percentage_used%%
 label-foreground = ${colors.color5}
 
 [module/menu]

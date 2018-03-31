@@ -15,7 +15,7 @@ set $mod Mod4
 
 #1 pixel border for all windows
 default_border pixel 1
-default_floating_border pixel 1
+default_floating_border normal 0
 
 #no need to follow mouse
 focus_follows_mouse no
