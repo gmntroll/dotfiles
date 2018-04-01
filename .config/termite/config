@@ -2,7 +2,7 @@
 allow_bold = true
 clickable_url = true
 dynamic_title = true
-font = Anonymous Pro for Powerline 10
+font = Anonymice Nerd Font Mono 10
 icon_name = terminal
 # Length of the scrollback buffer, 0 disabled the scrollback buffer
 # and setting it to a negative value means "infinite scrollback"

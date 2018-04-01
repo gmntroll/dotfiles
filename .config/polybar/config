@@ -78,9 +78,9 @@ tray-background = ${colors.background}
 fixed-center=true
 monitor=eDP
 bottom=true
-height=13
+height=15
 line-size=1
-font-0 = fixed:pixelsize=6
+font-0 = ctrld:pixelsize=6:antialias=false
 ;font-0 = Anonymous Pro:size=7:antialias=false
 ;font-1 = Font Awesome:size=7:antialias=false;1
 font-1 = siji:pixelsize=6;1
