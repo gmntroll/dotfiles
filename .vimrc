@@ -6,8 +6,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-"Plugin 'vim-airline/vim-airline'
-"Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdcommenter'
 "Plugin 'Auto-Pairs'
 " All of your Plugins must be added before the following line
@@ -20,7 +20,7 @@ syntax on
 set nu
 set hlsearch
 set autoindent
-set laststatus=1
+set laststatus=2
 set mouse=a
-"let g:airline_powerline_fonts=1
-"let g:airline_theme='jellybeans'
+let g:airline_powerline_fonts=1
+let g:airline_theme='base16_default'

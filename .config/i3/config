@@ -1,4 +1,5 @@
 #!/bin/sh
+set $term urxvt
 exec pkill battery.sh
 
 exec dunst
@@ -6,8 +7,8 @@ exec udiskie -t
 exec compton
 exec $HOME/scripts/wallpaper.sh
 exec $HOME/scripts/battery.sh
-exec termite -t scratchpad
-exec termite -t ncmpcpp -e ncmpcpp
+exec $term -name scratchpad
+exec $term -name ncmpcpp -e ncmpcpp
 exec polybar main
 
 #Super key for i3 keybindings
@@ -42,7 +43,7 @@ font pango:Anonymous Pro 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
