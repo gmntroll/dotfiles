@@ -2,7 +2,7 @@
 URxvt.scrollBar: false
 URxvt.depth:	 32
 URxvt.background: [80]#fafafa
-
+URxvt.cursorUnderline: true
 ! special
 *.foreground:   #263238
 *.background:   #fafafa

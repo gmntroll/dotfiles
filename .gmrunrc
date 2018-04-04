@@ -3,9 +3,9 @@
 # GPL v2.0 applies
 
 # Set terminal
-Terminal = termite
-TermExec = ${Terminal} -e
-AlwaysInTerm = ssh telnet ftp lynx mc vi vim pine centericq perldoc man less zsh bash 
+Terminal = urxvt
+TermExec = ${Terminal} -hold -e
+AlwaysInTerm = ssh telnet ftp lynx mc vi nvim neofetch cmatrix vim pine centericq perldoc man less zsh bash 
 
 # Set window geometry (except height)
 Width = 1166
@@ -42,7 +42,8 @@ URL_info = ${TermExec} 'info %s'
 URL_sh = sh -c '%s'
 
 # extension handlers
-EXT:doc,rtf = AbiWord %s
-EXT:cs,c,lua,hpp,txt,cc,cpp,h,java,html,htm,epl,tex,latex,js,css,xml,xsl,am = ${TermExec} 'vim %s'
+EXT:cs,c,lua,hpp,txt,cc,cpp,h,java,html,htm,epl,tex,latex,js,css,xml,xsl,am = vim %u
 EXT:ps = gv %s
 EXT:pdf = evince %s
+EXT:xls,xlsx = excel %u
+EXT:ppt,pptx = powerpnt %u
