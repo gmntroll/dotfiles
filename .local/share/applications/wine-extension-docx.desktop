@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office Word
+MimeType=application/vnd.openxmlformats-officedocument.wordprocessingml.document;
+Exec=wine start /ProgIDOpen Word.Document.12 %f
+NoDisplay=true
+StartupNotify=true
+Icon=EFFC_WINWORD.0

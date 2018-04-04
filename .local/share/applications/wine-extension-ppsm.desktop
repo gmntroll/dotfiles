@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office PowerPoint
+MimeType=application/vnd.ms-powerpoint.slideshow.macroEnabled.12;
+Exec=wine start /ProgIDOpen PowerPoint.SlideShowMacroEnabled.12 %f
+NoDisplay=true
+StartupNotify=true
+Icon=AC7F_POWERPNT.0

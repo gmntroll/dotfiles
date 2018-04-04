@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office PowerPoint
+MimeType=application/x-wine-extension-pptxml;
+Exec=wine start /ProgIDOpen powerpointxmlfile %f
+NoDisplay=true
+StartupNotify=true
+Icon=AC7F_POWERPNT.0

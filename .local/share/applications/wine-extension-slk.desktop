@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office Excel
+MimeType=text/spreadsheet;
+Exec=wine start /ProgIDOpen Excel.SLK %f
+NoDisplay=true
+StartupNotify=true
+Icon=0D14_EXCEL.0

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office Excel
+MimeType=application/vnd.ms-excel.template.macroEnabled.12;
+Exec=wine start /ProgIDOpen Excel.TemplateMacroEnabled %f
+NoDisplay=true
+StartupNotify=true
+Icon=0D14_EXCEL.0

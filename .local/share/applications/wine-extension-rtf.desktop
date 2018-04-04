@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office Word
+MimeType=application/rtf;
+Exec=wine start /ProgIDOpen Word.RTF.8 %f
+NoDisplay=true
+StartupNotify=true
+Icon=EFFC_WINWORD.0

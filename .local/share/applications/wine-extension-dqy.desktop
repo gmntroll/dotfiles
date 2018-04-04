@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office Excel
+MimeType=application/x-wine-extension-dqy;
+Exec=wine start /ProgIDOpen dqyfile %f
+NoDisplay=true
+StartupNotify=true
+Icon=CF0B_EXCEL.0

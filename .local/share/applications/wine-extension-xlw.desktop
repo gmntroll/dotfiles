@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office Excel
+MimeType=application/vnd.ms-excel;
+Exec=wine start /ProgIDOpen Excel.Workspace %f
+NoDisplay=true
+StartupNotify=true
+Icon=0D14_EXCEL.0

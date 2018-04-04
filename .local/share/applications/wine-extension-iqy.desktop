@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office Excel
+MimeType=text/x-ms-iqy;
+Exec=wine start /ProgIDOpen iqyfile %f
+NoDisplay=true
+StartupNotify=true
+Icon=CF0B_EXCEL.0

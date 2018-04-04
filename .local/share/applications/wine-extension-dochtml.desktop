@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office Word
+MimeType=application/x-wine-extension-dochtml;
+Exec=wine start /ProgIDOpen wordhtmlfile %f
+NoDisplay=true
+StartupNotify=true
+Icon=EFFC_WINWORD.0

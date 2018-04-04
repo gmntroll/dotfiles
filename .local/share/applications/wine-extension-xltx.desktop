@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office Excel
+MimeType=application/vnd.openxmlformats-officedocument.spreadsheetml.template;
+Exec=wine start /ProgIDOpen Excel.Template %f
+NoDisplay=true
+StartupNotify=true
+Icon=0D14_EXCEL.0

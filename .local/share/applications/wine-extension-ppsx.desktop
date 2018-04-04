@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office PowerPoint
+MimeType=application/vnd.openxmlformats-officedocument.presentationml.slideshow;
+Exec=wine start /ProgIDOpen PowerPoint.SlideShow.12 %f
+NoDisplay=true
+StartupNotify=true
+Icon=AC7F_POWERPNT.0

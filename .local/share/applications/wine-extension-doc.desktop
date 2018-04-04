@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Microsoft Office Word
+MimeType=application/msword;
+Exec=wine start /ProgIDOpen Word.Document.8 %f
+NoDisplay=true
+StartupNotify=true
+Icon=EFFC_WINWORD.0
