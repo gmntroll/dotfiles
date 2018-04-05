@@ -5,7 +5,7 @@ exec pkill battery.sh
 exec dunst
 exec udiskie -t
 exec compton
-exec $HOME/scripts/wallpaper.sh
+exec nitrogen --restore
 exec $HOME/scripts/battery.sh
 exec $term -name scratchpad
 exec $term -name ncmpcpp -e ncmpcpp
@@ -27,6 +27,7 @@ hide_edge_borders both
 for_window [class=mpv] floating enable
 for_window [class=mpv] sticky enable
 for_window [class=Lxappearance] floating enable
+for_window [class=Nitrogen] floating enable
 assign [class=Chromium] $ws1
 assign [instance=winword.exe] $ws3
 assign [instance=powerpnt.exe] $ws3
