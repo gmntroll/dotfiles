@@ -1,7 +1,7 @@
 *.font: xft:Anonymice Nerd Font Mono:size=10
 URxvt.scrollBar: false
 URxvt.depth:	 32
-URxvt.background: [80]#fafafa
+URxvt.background: [100]#fafafa
 URxvt.cursorUnderline: true
 ! special
 *.foreground:   #263238

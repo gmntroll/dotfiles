@@ -3,10 +3,10 @@ set $term urxvt
 exec pkill battery.sh
 
 exec dunst
-exec udiskie -t
-exec compton
-exec nitrogen --restore
 exec $HOME/scripts/battery.sh
+exec udiskie -t
+exec allow_rgb10_configs=false compton --backend glx
+exec nitrogen --restore
 exec $term -name scratchpad
 exec $term -name ncmpcpp -e ncmpcpp
 exec polybar main
