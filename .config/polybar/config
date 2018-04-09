@@ -4,7 +4,7 @@
 foreground      = #c5c8c6
 foreground_bold = #c5c8c6
 cursor          = #c5c8c6
-background      = #1d1f21
+background      = #aa1d1f21
 
 # black
 color0  = #1d1f21
@@ -89,8 +89,8 @@ tray-position=right
 tray-background=${root.background}
 tray-maxsize=12
 
-border-top-size=1
-border-top-color=${colors.color7}
+;border-top-size=1
+;border-top-color=${colors.color7}
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -263,7 +263,7 @@ label-layout =  %layout%
 label-layout-foreground = ${colors.color6}
 
 label-indicator = %name:0:1%
-label-indicator-foreground = ${colors.color7}
+label-indicator-foreground = ${colors.background}
 label-indicator-background = ${colors.foreground}
 label-indicator-padding = 1
 
