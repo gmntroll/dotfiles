@@ -1,9 +1,9 @@
 #!/bin/sh
 set $term urxvt
-exec pkill battery.sh
+exec pkill battery.sh && $HOME/scripts/battery.sh
 
 exec dunst
-exec $HOME/scripts/battery.sh
+#exec $HOME/scripts/battery.sh
 exec udiskie -t
 exec allow_rgb10_configs=false compton --backend glx
 exec nitrogen --restore
@@ -18,7 +18,7 @@ set $mod Mod4
 default_border pixel 1
 default_floating_border normal 0
 
-#no need to follow mouse
+#no need to follow mouse 
 focus_follows_mouse no
 
 #hide unnecessary borders
@@ -211,37 +211,29 @@ bindsym XF86Sleep exec $HOME/scripts/lock.sh && systemctl suspend
 bindsym $mod+F1 exec $HOME/scripts/lock.sh && systemctl hibernate
 
 
-# black
-set $color0 "#212121"
-set $color8 "#616161"
+set $color0	    #1d1f21
+set $color8	    #969896
 
-# red
-set $color1 "#b71c1c"
-set $color9 "#d32f2f"
+set $color1	    #cc342b
+set $color9	    #cc342b
 
-# green
-set $color2 "#1b5e20"
-set $color10 "#388e3c"
+set $color2	    #198844
+set $color10	    #198844
 
-# yellow
-set $color3 "#ff6f00"
-set $color11 "#ffa000"
+set $color3	    #fba922
+set $color11	    #fba922
 
-# blue
-set $color4 "#0d47a1"
-set $color12 "#1976d2"
+set $color4	    #3971ed
+set $color12	    #3971ed
 
-# magenta
-set $color5 "#4a148c"
-set $color13 "#7b1fa2"
+set $color5	    #a36ac7
+set $color13	    #a36ac7
 
-# cyan
-set $color6 "#006064"
-set $color14 "#0097a7"
+set $color6	    #3971ed
+set $color14	    #3971ed
 
-# white
-set $color7 "#b0bec5"
-set $color15 "#eceff1"
+set $color7	    #c5c8c6
+set $color15	    #ffffff
 
 #class				 border		background 	text		indicator	child_border
  client.focused			 $color3 	$color3 	$color0 	$color2		$color3

@@ -23,4 +23,4 @@ set autoindent
 set laststatus=2
 set mouse=a
 let g:airline_powerline_fonts=1
-let g:airline_theme='base16_default'
+let g:airline_theme='angr'
