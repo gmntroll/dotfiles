@@ -1,9 +1,9 @@
 #!/bin/sh
 set $term urxvt
-exec pkill battery.sh && $HOME/scripts/battery.sh
+#exec pkill battery.sh && $HOME/scripts/battery.sh
 
 exec dunst
-#exec $HOME/scripts/battery.sh
+exec $HOME/scripts/battery.sh
 exec udiskie -t
 exec allow_rgb10_configs=false compton --backend glx
 exec nitrogen --restore
