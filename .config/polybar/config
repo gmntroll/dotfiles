@@ -263,8 +263,7 @@ label-layout =  %layout%
 label-layout-foreground = ${colors.color6}
 
 label-indicator = %name:0:1%
-label-indicator-foreground = ${colors.background}
-label-indicator-background = ${colors.foreground}
+label-indicator-foreground = ${colors.color6}
 label-indicator-padding = 1
 
 [module/date]
