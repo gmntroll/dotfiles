@@ -1,7 +1,7 @@
 *.font: xft:Anonymice Nerd Font Mono:size=10
 URxvt.scrollBar: false
 URxvt.depth:	 32
-URxvt.background: [90]#263238
+URxvt.background: [93]#263238
 URxvt.cursorUnderline: true
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/xdg-open

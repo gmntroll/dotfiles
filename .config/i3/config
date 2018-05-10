@@ -8,6 +8,7 @@ exec udiskie -t
 exec allow_rgb10_configs=false compton --backend glx
 exec nitrogen --restore
 exec $term -name scratchpad
+exec mpd
 exec $term -name ncmpcpp -e ncmpcpp
 exec polybar main
 
@@ -104,6 +105,7 @@ bindsym $mod+t exec transset-df -ta > /dev/null
 
 #show scratchpad
 bindsym $mod+z scratchpad show 
+bindsym $mod+Shift+z move scratchpad
 
 #Some workspaces
 set $ws1 "1: web"
@@ -174,6 +176,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+bindsym $mod+u sticky toggle 
 
 bindsym $mod+Ctrl+Left resize shrink width 10 px or 10 ppt
 bindsym $mod+Ctrl+Down resize grow height 10 px or 10 ppt
