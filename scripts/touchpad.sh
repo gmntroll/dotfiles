@@ -1,10 +1,8 @@
-LAST_STATE=$( < .touchpad )
+LAST_STATE=$( xinput list-props "FocalTechPS/2 FocalTech Touchpad" | grep "Device Enabled" | awk '{print $4}' )
 
 if [ $LAST_STATE -eq 0 ] 
 then
 	xinput enable "FocalTechPS/2 FocalTech Touchpad"
-	echo 1 > .touchpad
 else
 	xinput disable "FocalTechPS/2 FocalTech Touchpad"
-	echo 0 > .touchpad
 fi

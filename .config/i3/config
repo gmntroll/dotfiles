@@ -1,5 +1,5 @@
 #!/bin/sh
-set $term urxvt
+set $term termite
 #exec pkill battery.sh && $HOME/scripts/battery.sh
 
 exec dunst
@@ -7,17 +7,17 @@ exec $HOME/scripts/battery.sh
 exec udiskie -t
 exec allow_rgb10_configs=false compton --backend glx
 exec nitrogen --restore
-exec $term -name scratchpad
+exec $term -t scratchpad
 exec mpd
-exec $term -name ncmpcpp -e ncmpcpp
+exec $HOME/scripts/ncmpcpp.sh
 exec polybar main
 
 #Super key for i3 keybindings
 set $mod Mod4
 
 #1 pixel border for all windows
-default_border pixel 1
-default_floating_border normal 0
+#default_border pixel 1
+#default_floating_border normal 0
 
 #no need to follow mouse 
 focus_follows_mouse no
@@ -212,7 +212,6 @@ bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
 bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
 bindsym XF86Sleep exec $HOME/scripts/lock.sh && systemctl suspend
 bindsym $mod+F1 exec $HOME/scripts/lock.sh && systemctl hibernate
-
 
 set $color0	    #1d1f21
 set $color8	    #969896

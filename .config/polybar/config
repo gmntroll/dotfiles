@@ -4,7 +4,7 @@
 foreground      = #c5c8c6
 foreground_bold = #c5c8c6
 cursor          = #c5c8c6
-background      = #d01d1f21
+background      = #1d1f21
 
 ; black
 color0  = #1d1f21
@@ -83,7 +83,7 @@ line-size=1
 ;font-0 = ctrld:pixelsize=6:antialias=false
 font-0 = Anonymous Pro:size=8
 ;font-1 = Font Awesome:size=7:antialias=false;1
-font-1 = siji:pixelsize=6;1
+font-1 = "Wuncon Siji:pixelsize=6;1"
 
 tray-position=right
 tray-background=${root.background}
@@ -218,11 +218,7 @@ label-disconnected = 
 label-disconnected-foreground = ${colors.color1}
 
 [module/vol]
-type = internal/volume
-
-master-soundcard = default
-
-mapped = true
+type = internal/pulseaudio
 
 format-volume = <ramp-volume> <label-volume>
 format-muted = <label-muted>

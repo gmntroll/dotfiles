@@ -1,4 +1,4 @@
-*.font: xft:Anonymice Nerd Font Mono:size=10
+!*.font: xft:Source Code Pro for Powerline:size=10
 URxvt.scrollBar: false
 URxvt.depth:	 32
 URxvt.background: [93]#263238
